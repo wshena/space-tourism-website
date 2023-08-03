@@ -1,9 +1,9 @@
 import { useState } from 'react'
 import { Navlinks } from '../content';
 import { Link } from 'react-router-dom';
-import Logo from '../assets/shared/logo.svg'
-import iconHamburger from '../assets/shared/icon-hamburger.svg'
-import iconClose from '../assets/shared/icon-close.svg'
+import Logo from '../../public/assets/shared/logo.svg'
+import iconHamburger from '../../public/assets/shared/icon-hamburger.svg'
+import iconClose from '../../public/assets/shared/icon-close.svg'
 
 function Navbar() {
 	const [isClick, setIsClick] = useState(false);
