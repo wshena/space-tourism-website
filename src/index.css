@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  box-sizing: border-box;
+  color: white;
+  font-family: 'Bellefair', serif;
+}
+
+/* Heading */
+h1 {
+  @apply text-[80px] md:text-[150px]
+}
+
+h2 {
+  @apply text-[56px] md:text-[100px]
+}
+
+h3 {
+  @apply text-[24px] md:text-[56px]
+}
+
+h4 {
+  @apply text-[16px] md:text-[32px]
+}
+
+h5 {
+  font-family: 'Barlow Condensed', sans-serif;
+  letter-spacing: 4.75px;
+  @apply text-[15px] md:text-[28px]
+}
+
+/* Heading */
+
+/* Paragraph */
+.p1 {
+  font-size: 28px;
+}
+
+.p2 {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 14px;
+  letter-spacing: 2.35px;
+}
+
+p {
+  @apply text-[15px] md:text-[18px]
+}
+
+/* Paragraph */
+
+.navLinks {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 16px;
+  letter-spacing: 2.7px;
+}
+.activeLinks {
+  border-bottom: 1px solid white
+}
+
+/* Animation for mobile navigation */
+.slide-right {
+  -webkit-animation: slide-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: slide-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes slide-right {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  100% {
+    -webkit-transform: translateX(-1%);
+    transform: translateX(-1%);
+  }
+}
+
+@keyframes slide-right {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  100% {
+    -webkit-transform: translateX(-1%);
+    transform: translateX(-1%);
+  }
+}
+
+/* Animation for mobile navigation */
